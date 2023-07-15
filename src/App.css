@@ -1,38 +1,308 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+#navbar ul{
+    list-style: none;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.fa-chevron-left::before {
+    margin-right: 2rem;
+    cursor:pointer
+}
+.fa-chevron-right::before {
+    cursor:pointer
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#searchBar {
+    position: absolute;
+    top: 0.5rem;
+    width: 48.5rem;
+    border-radius: 1rem;
+    border: 2px solid #e8e5e5;
+    margin-left: 4.1rem;
+    width: 64rem;
+    
+    padding:0.5rem;
+    padding-left: 1.8rem;
+    
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.fa-magnifying-glass::before {
+    content: "\f002";
+    position: absolute;
+    left: 11.1rem;
+    top: 1.1rem
+
 }
 
-.App-link {
-  color: #61dafb;
+.profile h4{
+    display: inline-block;
+    position: absolute;
+    font-weight:100;
+    right: 8.3rem;
+    top: 0rem;
+    font-size: 1.1rem
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.profile img {
+    width: 2.6rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 5rem;
+    border-radius: 2rem
+}
+#profileDropdown{
+    position: absolute;
+    top: 1.5rem;
+    right: 3.3rem;
+    border: none;
+
+}
+.forYouNavbar{
+    display: inline-block
+    
+}
+
+.forYouNavbar ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 8rem;
+    left: 0.2rem;
+}
+
+.forYouNavbar ul li a{
+    text-decoration: none;
+    margin-right:1rem;
+}
+.forYou{
+    margin-left: 2.2rem;
+    margin-top: 4rem;
+    
+
+}
+
+.nav-link-active a{
+    color: #ff6e00;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: 'Abel', sans-serif;
+   
+}
+
+.nav-link-passive a{
+    color: #9d8c8c66;
+    font-size: 1.3rem;
+    font-family: 'Abel', sans-serif;
+}
+
+
+.card{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid black; */
+    margin-left: 2rem;
+    border-radius: 1rem;
+    /* padding: 0.5rem; */
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.mapContent{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.newItem{
+    /* border:2px solid black; */
+    margin:2px;
+    text-align: center;
+    
+}
+
+.forYouHeader{
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.forYouHeader li {
+    list-style: none;
+    /* align-self: flex-end; */
+    position: absolute;
+    right: 1rem;
+    top:7.7rem
+}
+
+.forYouHeader h1{
+    position: relative;
+    bottom: 1rem;
+}
+
+/* .card i{
+    position: absolute;
+    left:1rem;
+    top:10rem
+} */
+
+.playLists{
+    height: 200px;
+    
+}
+
+.fa-heart::before {
+    content: "\f004";
+    position: relative;
+    top: 2rem;
+    left: 5rem;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card span{
+    position: relative;
+    bottom: 2rem;
+    right: 3.5rem;
+    background-color: white;
+    padding: 0px 3px;
+    border: 1px solid white;
+    border-radius: 23px;
+    padding-bottom: 1px;
+
+}
+
+.listenAndAuthor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.box1{
+    /* border: 2px solid black; */
+    height:200px ;
+
+}
+
+.box2{
+    /* border: 2px solid black; */
+    height:200px ;
+    
+}
+
+.authorPhoto img {
+    height: 6rem;
+    width: 6rem;
+    margin: 0rem 1.2rem;
+    border-radius: 4rem;
+}
+
+.box2MapedContent{
+    display: flex;
+}
+
+.authorPhotoName p {
+    position: relative;
+    color:#47404066;
+    bottom: 0.7rem;
+    left: 1.4rem;
+}
+
+.authorHeader{
+    display: flex;
+}
+
+.authorHeader i{
+    cursor: pointer;
+    position: relative;
+    top: 1.6rem;
+    left: 39rem;
+}
+.continueListenHeader{
+    display: flex;
+}
+
+.continueListenHeader i{
+    cursor: pointer;
+    position: relative;
+    top: 1.6rem;
+    left: 37rem;
+}
+
+.listenItem{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.listenItembox1{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 8rem;
+}
+
+.listenItembox2{
+    /* border: 2px solid black; */
+    border-bottom: 3px solid brown;
+    width: 100%;
+    height: 8rem;
+}
+
+.listenItembox1 img{
+    height: 100%;
+    width: 100%;
+}
+
+#playButton{
+    position: relative;
+    top: 1.7rem;
+    left: 42rem;
+    color:#FF6E00;
+    cursor: pointer;
+}
+
+#kebab{
+    content: "\f142";
+    position: relative;
+    bottom: 3rem;
+    left: 43rem;
+    color: #4c4c4c;
+    cursor: pointer;
+}   
+
+.listenItembox2 p{
+    color: #47404066;
+    position: relative;    
+    left: 2rem;
+    bottom: 4rem;
+
+}
+
+.listenItembox2 h3{
+    margin-left: 1rem;
+}
+
+.lowerBody p{
+    color:#47404066;
+    position: relative;
+    bottom: 2.9rem
+}
+
+.lowerBody h3{
+    position: relative;
+    bottom: 2rem;
 }
